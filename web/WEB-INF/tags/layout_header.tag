@@ -10,8 +10,8 @@
 
     <nav class="navbar navbar-light bg-light static-top">
         <div class="container">
-            <a class="navbar-brand" href="#">ISD Prototype</a>
-            <a class="btn btn-outline-primary" href="#">Sign In</a>
+            <a class="navbar-brand" href="index.jsp">ISD Prototype</a>
+            <a class="btn btn-outline-primary" href="login.jsp">Sign In</a>
         </div>
     </nav>
 

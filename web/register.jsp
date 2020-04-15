@@ -8,19 +8,22 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
-    <jsp:attribute name="title">Login - ISD Prototype</jsp:attribute>
+    <jsp:attribute name="title">Register - ISD Prototype</jsp:attribute>
     <jsp:body>
         <div class="col-md-6">
             <h3>Login</h3>
             <form>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email" value="" />
+                    <input type="text" class="form-control" placeholder="Email *" value="" />
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password" value="" />
+                    <input type="password" class="form-control" placeholder="Password *" value="" />
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-success" value="Login" />
+                </div>
+                <div class="form-group">
+                    <a href="#" class="btn btn-default">Forgot Password?</a>
                 </div>
             </form>
         </div>
