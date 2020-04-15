@@ -8,27 +8,20 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
-      <jsp:attribute name="title">ISD Prototype | Index</jsp:attribute>
+    <jsp:attribute name="title">ISD Prototype | Index</jsp:attribute>
     <jsp:body>
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-md-6">
-                    <h3>Login</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Email *" value="" />
+        <div class="row text-center">
+            <div class="col-xl-9 mx-auto">
+                <h1 class="mb-5">Ready to get started? Sign up now!</h1>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                <form>
+                    <div class="form-row">
+                        <div class="text-center col-xs-12 col-md-3">
+                            <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-success" value="Login" />
-                        </div>
-                        <div class="form-group">
-                            <a href="#" class="btn btn-default">Forgot Password?</a>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </jsp:body>
