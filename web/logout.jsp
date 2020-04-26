@@ -8,13 +8,11 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
+    <jsp:attribute name="title">Logout</jsp:attribute>
     <jsp:body>
         <div class="row text-center">
             <div class="col-xl-12 mx-auto">
-                <h1 class="mb-5">Ready to get started? Sign up now!</h1>
-            </div>
-            <div class="col-xs-12 col-md-2 mx-auto">
-                <a class="btn btn-block btn-lg btn-primary mx-auto" href="register.jsp">Sign up!</a>
+                <h5 class="mb-5">You have been logged out. Click <a href="index.jsp">here</a> to return to the main page.</h5>
             </div>
         </div>
     </jsp:body>

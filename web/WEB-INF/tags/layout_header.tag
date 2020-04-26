@@ -12,6 +12,7 @@
         <div class="container">
             <a class="navbar-brand" href="index.jsp">ISD Prototype</a>
             <a class="btn btn-outline-primary" href="login.jsp">Sign In</a>
+            <a class="btn btn-outline-primary" href="logout.jsp">Logout</a>
         </div>
     </nav>
 

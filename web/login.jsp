@@ -8,7 +8,7 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
-    <jsp:attribute name="title">Login - ISD Prototype</jsp:attribute>
+    <jsp:attribute name="title">Login</jsp:attribute>
     <jsp:body>
         <div class="col-md-6">
             <h3>Login</h3>
