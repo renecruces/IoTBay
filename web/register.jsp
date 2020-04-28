@@ -12,13 +12,13 @@
     <jsp:body>
         <div class="col-md-6">
             <h3>Sign up</h3>
-            <form>
+            <form action="welcome.jsp" method="post">
                 <div class="form-group row">
                     <label class="col-sm-4 col-form-label">
                         Email
                     </label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Email" value="" />
+                        <input name="email" type="text" class="form-control" placeholder="Email" value="" />
                     </div>
                 </div>
                 <div class="form-group row">
@@ -26,7 +26,7 @@
                         Full name
                     </label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Full name" value="" />
+                        <input name="fullName" type="text" class="form-control" placeholder="Full name" value="" />
                     </div>
                 </div>
                 <div class="form-group row">
@@ -34,7 +34,7 @@
                         Password
                     </label>
                     <div class="col-sm-8">
-                        <input type="password" class="form-control" placeholder="Password" value="" />
+                        <input name="password" type="password" class="form-control" placeholder="Password" value="" />
                     </div>
                 </div>
 
@@ -43,13 +43,13 @@
                         <legend class="col-form-label col-sm-4 pt-0">Gender</legend>
                         <div class="col-sm-8">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="genderRadios" id="genderRadios1" value="option1" checked>
+                                <input name="gender" class="form-check-input" type="radio" name="genderRadios" id="genderRadios1" value="Male" checked>
                                 <label class="form-check-label" for="genderRadios1">
                                     Male
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="genderRadios" id="genderRadios2" value="option2">
+                                <input name="gender" class="form-check-input" type="radio" name="genderRadios" id="genderRadios2" value="Female">
                                 <label class="form-check-label" for="genderRadios2">
                                     Female
                                 </label>
@@ -63,7 +63,7 @@
                         Favourite colour
                     </label>
                     <div class="col-sm-8">
-                        <select class="form-control form-control-sm">
+                        <select name="colour" class="form-control form-control-sm">
                             <option>Red</option>
                             <option>Green</option>
                             <option>Blue</option>
@@ -78,16 +78,16 @@
                     <div class="col-form-label col-sm-4">Agree to TOS</div>
                     <div class="col-sm-8">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="tosCheck1">
+                            <input name="agreeToTos" class="form-check-input" type="checkbox" id="tosCheck1">
                         </div>
                     </div>
                 </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="form-group row">
-            <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">Register</button>
-            </div>
-        </div>
-    </div>
-</jsp:body>
+    </jsp:body>
 </t:layout>

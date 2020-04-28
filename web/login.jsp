@@ -12,15 +12,27 @@
     <jsp:body>
         <div class="col-md-6">
             <h3>Login</h3>
-            <form>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email" value="" />
+            <form action="welcome.jsp" method="post">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">
+                        Email
+                    </label>
+                    <div class="col-sm-8">
+                        <input name="email" type="text" class="form-control" placeholder="Email" value="" />
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password" value="" />
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">
+                        Password
+                    </label>
+                    <div class="col-sm-8">
+                        <input name="password" type="password" class="form-control" placeholder="Password" value="" />
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-success" value="Login" />
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-success">Login</button>
+                    </div>
                 </div>
             </form>
         </div>

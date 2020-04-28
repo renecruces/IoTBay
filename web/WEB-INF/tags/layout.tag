@@ -6,6 +6,7 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@attribute name="title"%>
 <%@tag description="Layout" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
