@@ -7,6 +7,17 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
+<%
+    //Invalidate session
+    try {
+        if (session.getAttribute("user") != null) {
+            session.invalidate();
+        }
+    } catch (Exception ex) {
+
+    }
+%>
+
 <t:layout>
     <jsp:attribute name="title">Logout</jsp:attribute>
     <jsp:body>

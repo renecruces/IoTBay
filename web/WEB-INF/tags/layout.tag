@@ -21,6 +21,7 @@
     </head>
     <body>
         <t:layout_header/>
+        <br/>
         <main role="main" class="container">
             <jsp:doBody/>
         </main>

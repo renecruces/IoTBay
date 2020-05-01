@@ -26,7 +26,7 @@
                         Full name
                     </label>
                     <div class="col-sm-8">
-                        <input name="fullName" type="text" class="form-control" placeholder="Full name" value="" />
+                        <input name="name" type="text" class="form-control" placeholder="Full name" value="" />
                     </div>
                 </div>
                 <div class="form-group row">
@@ -35,6 +35,14 @@
                     </label>
                     <div class="col-sm-8">
                         <input name="password" type="password" class="form-control" placeholder="Password" value="" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">
+                        DOB
+                    </label>
+                    <div class="col-sm-8">
+                        <input name="dob" type="date" class="form-control" placeholder="DOB" value="" />
                     </div>
                 </div>
 
