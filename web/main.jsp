@@ -20,6 +20,7 @@
 
 <t:layout>
     <jsp:attribute name="title">Main</jsp:attribute>
+    <jsp:attribute name="userLoggedIn">true</jsp:attribute>
     <jsp:body>
         <div class="row">
             <div class="col-xl-12 mx-auto">

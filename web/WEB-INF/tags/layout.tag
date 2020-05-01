@@ -4,7 +4,8 @@
     Author     : renec
 --%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
-<%@attribute name="title"%>
+<%@attribute name="title" required="true" %>
+<%@attribute name="userLoggedIn" required="true" type="Boolean" %>
 <%@tag description="Layout" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -20,7 +21,9 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <t:layout_header/>
+        <t:layout_header>
+            <jsp:attribute name="userLoggedIn">${userLoggedIn}</jsp:attribute>
+        </t:layout_header>
         <br/>
         <main role="main" class="container">
             <jsp:doBody/>

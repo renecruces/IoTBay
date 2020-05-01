@@ -8,6 +8,8 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
+    <jsp:attribute name="title"/>
+    <jsp:attribute name="userLoggedIn">false</jsp:attribute>
     <jsp:body>
         <div class="row text-center">
             <div class="col-xl-12 mx-auto">

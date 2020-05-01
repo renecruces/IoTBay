@@ -9,6 +9,7 @@
 
 <t:layout>
     <jsp:attribute name="title">Login</jsp:attribute>
+    <jsp:attribute name="userLoggedIn">false</jsp:attribute>
     <jsp:body>
         <div class="col-md-6">
             <h3>Login</h3>

@@ -9,17 +9,12 @@
 
 <%
     //Invalidate session
-    try {
-        if (session.getAttribute("user") != null) {
-            session.invalidate();
-        }
-    } catch (Exception ex) {
-
-    }
+    session.invalidate();
 %>
 
 <t:layout>
     <jsp:attribute name="title">Logout</jsp:attribute>
+    <jsp:attribute name="userLoggedIn">false</jsp:attribute>
     <jsp:body>
         <div class="row text-center">
             <div class="col-xl-12 mx-auto">
