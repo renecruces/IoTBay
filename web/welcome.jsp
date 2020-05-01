@@ -28,7 +28,6 @@
     User user = new User(email, name, password, dob, gender, colour, agreeToTos);
 
     //Make values accessible to tags
-    request.setAttribute("user", user);
     request.setAttribute("email", email);
     request.setAttribute("name", name);
     request.setAttribute("password", password);
@@ -36,6 +35,8 @@
     request.setAttribute("gender", gender);
     request.setAttribute("colour", colour);
     request.setAttribute("agreeToTos", agreeToTos);
+
+    session.setAttribute("user", user);
 %>
 
 <t:layout>
