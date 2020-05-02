@@ -6,8 +6,6 @@
 package uts.isd.model;
 
 import java.io.Serializable;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  *
@@ -18,12 +16,12 @@ public class User implements Serializable {
     private String email;
     private String name;
     private String password;
-    private Date dob;
+    private String dob;
     private String gender;
     private String colour;
     private Boolean agreeToTos;
 
-    public User(String email, String name, String password, Date dob, String gender, String colour, Boolean agreeToTos) {
+    public User(String email, String name, String password, String dob, String gender, String colour, Boolean agreeToTos) {
         this.email = email;
         this.name = name;
         this.password = password;
@@ -45,12 +43,8 @@ public class User implements Serializable {
         return this.password;
     }
 
-    public Date GetDob() {
+    public String GetDob() {
         return this.dob;
-    }
-
-    public String GetFormattedDob() {
-        return this.dob == null ? "" : new SimpleDateFormat("dd/MM/yyyy").format(this.dob);
     }
 
     public String GetGender() {

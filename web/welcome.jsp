@@ -5,8 +5,6 @@
 --%>
 
 <%@page import="uts.isd.model.User"%>
-<%@page import="java.text.SimpleDateFormat"%>
-<%@page import="java.util.Date"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
@@ -15,27 +13,23 @@
     String email = request.getParameter("email");
     String name = request.getParameter("name");
     String password = request.getParameter("password");
-
-    String dobStr = request.getParameter("dob");
-    Date dob = dobStr == null ? null : new SimpleDateFormat("yyyy-MM-dd").parse(dobStr);
-
+    String dob = request.getParameter("dob");
     String gender = request.getParameter("gender");
     String colour = request.getParameter("colour");
     String agreeToTosStr = request.getParameter("agreeToTos");
     Boolean agreeToTos = (agreeToTosStr == null ? "" : agreeToTosStr).equals("on");
 
-    //Initialise session
-    User user = new User(email, name, password, dob, gender, colour, agreeToTos);
-
     //Make values accessible to tags
     request.setAttribute("email", email);
     request.setAttribute("name", name);
     request.setAttribute("password", password);
-    request.setAttribute("dob", user.GetFormattedDob());
+    request.setAttribute("dob", dob);
     request.setAttribute("gender", gender);
     request.setAttribute("colour", colour);
     request.setAttribute("agreeToTos", agreeToTos);
 
+    //Initialise session
+    User user = new User(email, name, password, dob, gender, colour, agreeToTos);
     session.setAttribute("user", user);
 %>
 

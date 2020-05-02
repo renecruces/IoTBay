@@ -47,7 +47,7 @@
                         </tr>
                         <tr>
                             <td>DOB</td>
-                            <td>${user.GetFormattedDob()}</td>
+                            <td>${user.GetDob()}</td>
                         </tr>
                         <tr>
                             <td>Gender</td>
